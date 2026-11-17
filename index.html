@@ -1,0 +1,697 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <link rel="icon" type="image/png" href="favicon.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Plants are Trees - Discover the beauty of nature, plant care tips, tree planting guides, and environmental awareness in English and Urdu.">
+    <meta name="keywords" content="plants, trees, gardening, environmental protection, house plants, planting guide, Urdu nature guide">
+    <meta name="author" content="Khayyam Dogar">
+    
+    <title>Plants are Trees | botanical & Environmental Awareness</title>
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts (Inter & Noto Nastaliq Urdu / Noto Sans Arabic) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Noto+Nastaliq+Urdu:wght@400;600;700&family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            50: '#f0fdf4',
+                            100: '#dcfce7',
+                            200: '#bbf7d0',
+                            500: '#22c55e',
+                            600: '#16a34a',
+                            700: '#15803d',
+                            800: '#166534',
+                            900: '#14532d',
+                            950: '#052e16',
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Plus Jakarta Sans', 'Inter', 'sans-serif'],
+                        urdu: ['Noto Nastaliq Urdu', 'Noto Sans Arabic', 'serif']
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        .font-urdu {
+            font-family: 'Noto Nastaliq Urdu', 'Noto Sans Arabic', serif;
+            line-height: 2.2;
+        }
+        .hero-bg {
+            background-image: linear-gradient(to bottom, rgba(5, 46, 22, 0.75), rgba(5, 46, 22, 0.85)), 
+                              url('https://images.unsplash.com/photo-1511497584788-876761c11969?q=80&w=1920&auto=format&fit=crop');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+        .bg-nature-pattern {
+            background-image: linear-gradient(to right, rgba(255,255,255,0.92), rgba(255,255,255,0.95)), 
+                              url('https://images.unsplash.com/photo-1518531933037-91b2f5f229cc?q=80&w=1200&auto=format&fit=crop');
+            background-size: cover;
+        }
+        .glass-card {
+            background: rgba(255, 255, 255, 0.85);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+        }
+        .glass-dark {
+            background: rgba(5, 46, 22, 0.85);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        <!-- Favicon for browser tab -->
+<link rel="icon" type="image/png" href="favicon.png">
+
+<!-- Preview image for Google / Social Media (WhatsApp, Facebook, Twitter) -->
+<meta property="og:image" content="https://yourwebsite.com/preview-image.jpg">
+<meta property="og:title" content="Plants are Trees">
+<meta property="og:description" content="Explore the wonderful world of plants and trees in English and Urdu.">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3565801613617005"
+     crossorigin="anonymous"></script>
+<meta name="google-adsense-account" content="ca-pub-3565801613617005">
+google.com, pub-3565801613617005, DIRECT, f08c47fec0942fa0
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800 antialiased font-sans selection:bg-brand-500 selection:text-white">
+
+    <!-- Top Announcement Bar / SEO Tip Teaser -->
+    <div class="bg-brand-950 text-brand-200 text-xs sm:text-sm py-2 px-4 text-center border-b border-brand-800 flex justify-between items-center px-6">
+        <div class="container mx-auto flex justify-between items-center">
+            <span class="truncate">
+                <i class="fa-solid fa-seedling text-brand-500 mr-2"></i>
+                <span data-en="Welcome to Plants are Trees - Protecting our Planet's Green Heart" data-ur="پودے درخت ہیں - زمین کا سرسبز مستقبل اور تحفظ ہمارا مقصد">Welcome to Plants are Trees - Protecting our Planet's Green Heart</span>
+            </span>
+            <div class="flex items-center space-x-4 space-x-reverse ml-4">
+                <a href="tel:+923066638575" class="hover:text-white transition flex items-center gap-1">
+                    <i class="fa-solid fa-phone text-xs"></i> <span class="hidden md:inline">+92 306 6638575</span>
+                </a>
+                <span class="hidden md:inline text-brand-700">|</span>
+                <a href="mailto:khayyamdogar02@gmail.com" class="hover:text-white transition flex items-center gap-1">
+                    <i class="fa-solid fa-envelope text-xs"></i> <span class="hidden md:inline">khayyamdogar02@gmail.com</span>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation Bar -->
+    <nav class="sticky top-0 z-50 bg-white/90 backdrop-blur-md shadow-sm border-b border-emerald-100 transition-all duration-300">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                
+                <!-- Logo -->
+                <a href="#home" class="flex items-center space-x-3 group">
+                    <div class="w-12 h-12 rounded-2xl bg-gradient-to-br from-brand-500 to-brand-800 flex items-center justify-center text-white shadow-lg shadow-brand-500/30 group-hover:scale-105 transition">
+                        <i class="fa-solid fa-tree text-2xl"></i>
+                    </div>
+                    <div class="flex flex-col">
+                        <span class="font-extrabold text-xl sm:text-2xl text-brand-950 tracking-tight leading-none group-hover:text-brand-600 transition">Plants are Trees</span>
+                        <span class="text-xs font-semibold text-brand-600 tracking-wider uppercase mt-1" data-en="Botanical & Eco Hub" data-ur="نباتیاتی و ماحول دوست مرکز">Botanical & Eco Hub</span>
+                    </div>
+                </a>
+
+                <!-- Desktop Navigation Links -->
+                <div class="hidden lg:flex items-center space-x-1 xl:space-x-2">
+                    <a href="#home" class="px-4 py-2 rounded-xl text-sm font-semibold text-slate-700 hover:text-brand-600 hover:bg-brand-50 transition" data-en="Home" data-ur="صفحہ اول">Home</a>
+                    <a href="#about" class="px-4 py-2 rounded-xl text-sm font-semibold text-slate-700 hover:text-brand-600 hover:bg-brand-50 transition" data-en="About Us" data-ur="ہمارے بارے میں">About Us</a>
+                    <a href="#plant-care" class="px-4 py-2 rounded-xl text-sm font-semibold text-slate-700 hover:text-brand-600 hover:bg-brand-50 transition" data-en="Plant Care" data-ur="پودوں کی دیکھ بھال">Plant Care</a>
+                    <a href="#gallery" class="px-4 py-2 rounded-xl text-sm font-semibold text-slate-700 hover:text-brand-600 hover:bg-brand-50 transition" data-en="Gallery" data-ur="تصاویر">Gallery</a>
+                    <a href="#videos" class="px-4 py-2 rounded-xl text-sm font-semibold text-slate-700 hover:text-brand-600 hover:bg-brand-50 transition" data-en="Videos" data-ur="ویڈیوز">Videos</a>
+                    <a href="#seo-guide" class="px-4 py-2 rounded-xl text-sm font-semibold text-brand-700 bg-brand-50 border border-brand-200 hover:bg-brand-100 transition" data-en="Google Ranking Strategy" data-ur="گوگل درجہ بندی کے راز">Google Ranking Strategy</a>
+                    <a href="#contact" class="px-4 py-2 rounded-xl text-sm font-semibold text-slate-700 hover:text-brand-600 hover:bg-brand-50 transition" data-en="Contact Us" data-ur="رابطہ کریں">Contact Us</a>
+                </div>
+
+                <!-- Right Actions: Language Switcher -->
+                <div class="flex items-center space-x-3">
+                    <button id="langToggle" onclick="toggleLanguage()" class="flex items-center gap-2 bg-gradient-to-r from-brand-700 to-brand-900 text-white px-4 py-2.5 rounded-xl font-medium shadow-md shadow-brand-900/20 hover:shadow-lg hover:from-brand-600 hover:to-brand-800 transition active:scale-95">
+                        <i class="fa-solid fa-language text-lg"></i>
+                        <span id="langLabel" class="text-xs sm:text-sm font-bold">اردو میں دیکھئے</span>
+                    </button>
+
+                    <!-- Mobile Menu Button -->
+                    <button onclick="toggleMobileMenu()" class="lg:hidden p-2.5 rounded-xl text-slate-700 hover:bg-slate-100 focus:outline-none">
+                        <i class="fa-solid fa-bars text-xl"></i>
+                    </button>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Mobile Menu Dropdown -->
+        <div id="mobileMenu" class="hidden lg:hidden bg-white border-b border-slate-200 px-4 pt-2 pb-6 space-y-2">
+            <a href="#home" onclick="toggleMobileMenu()" class="block px-4 py-2.5 rounded-lg text-base font-medium text-slate-700 hover:bg-brand-50 hover:text-brand-600" data-en="Home" data-ur="صفحہ اول">Home</a>
+            <a href="#about" onclick="toggleMobileMenu()" class="block px-4 py-2.5 rounded-lg text-base font-medium text-slate-700 hover:bg-brand-50 hover:text-brand-600" data-en="About Us" data-ur="ہمارے بارے میں">About Us</a>
+            <a href="#plant-care" onclick="toggleMobileMenu()" class="block px-4 py-2.5 rounded-lg text-base font-medium text-slate-700 hover:bg-brand-50 hover:text-brand-600" data-en="Plant Care" data-ur="پودوں کی دیکھ بھال">Plant Care</a>
+            <a href="#gallery" onclick="toggleMobileMenu()" class="block px-4 py-2.5 rounded-lg text-base font-medium text-slate-700 hover:bg-brand-50 hover:text-brand-600" data-en="Gallery" data-ur="تصاویر">Gallery</a>
+            <a href="#videos" onclick="toggleMobileMenu()" class="block px-4 py-2.5 rounded-lg text-base font-medium text-slate-700 hover:bg-brand-50 hover:text-brand-600" data-en="Videos" data-ur="ویڈیوز">Videos</a>
+            <a href="#seo-guide" onclick="toggleMobileMenu()" class="block px-4 py-2.5 rounded-lg text-base font-medium text-brand-700 bg-brand-50" data-en="Google Ranking Guide" data-ur="گوگل رینکنگ گائیڈ">Google Ranking Guide</a>
+            <a href="#contact" onclick="toggleMobileMenu()" class="block px-4 py-2.5 rounded-lg text-base font-medium text-slate-700 hover:bg-brand-50 hover:text-brand-600" data-en="Contact Us" data-ur="رابطہ کریں">Contact Us</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-bg min-h-[85vh] flex items-center justify-center relative text-white py-20 px-4">
+        <div class="container mx-auto max-w-5xl text-center relative z-10">
+            <span class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-brand-500/20 backdrop-blur-md border border-brand-400/30 text-brand-300 font-semibold text-xs sm:text-sm mb-6 tracking-wide uppercase">
+                <i class="fa-solid fa-leaf text-brand-400"></i>
+                <span data-en="Nurture Nature • Preserve Trees • Save Earth" data-ur="قدرت کی دیکھ بھال • درختوں کا تحفظ • زمین کی حفاظت">Nurture Nature • Preserve Trees • Save Earth</span>
+            </span>
+            
+            <h1 class="text-4xl sm:text-6xl md:text-7xl font-extrabold tracking-tight mb-6 leading-tight" data-en="Every Plant Matters, Every Tree Sustains Life" data-ur="ہر پودا اہم ہے، ہر درخت زندگی کی ضمانت ہے">
+                Every Plant Matters, Every Tree Sustains Life
+            </h1>
+            
+            <p class="text-lg sm:text-2xl text-slate-200 max-w-3xl mx-auto mb-10 font-light leading-relaxed" data-en="Welcome to 'Plants are Trees' — your comprehensive encyclopedia and community for lush indoor flora, majestic forestry, botanical care guides, and environmental sustainability." data-ur=" 'پودے درخت ہیں' کی ویب سائٹ پر خوش آمدید — ہر قسم کے پودوں، گھریلو سجاوٹ، شجرکاری کی اہمیت اور ماحولیاتی نگہداشت کا مکمل اور جامع رہنما۔">
+                Welcome to 'Plants are Trees' — your comprehensive encyclopedia and community for lush indoor flora, majestic forestry, botanical care guides, and environmental sustainability.
+            </p>
+
+            <div class="flex flex-col sm:flex-row justify-center items-center gap-4">
+                <a href="#plant-care" class="w-full sm:w-auto px-8 py-4 bg-brand-500 hover:bg-brand-600 text-white font-bold rounded-2xl shadow-xl shadow-brand-500/30 hover:scale-105 transition flex items-center justify-center gap-3">
+                    <i class="fa-solid fa-book-open"></i>
+                    <span data-en="Explore Gardening Guide" data-ur="باغبانی گائیڈ دیکھئے">Explore Gardening Guide</span>
+                </a>
+                <a href="#about" class="w-full sm:w-auto px-8 py-4 bg-white/10 hover:bg-white/20 backdrop-blur-md border border-white/30 text-white font-bold rounded-2xl transition flex items-center justify-center gap-3">
+                    <i class="fa-solid fa-circle-info"></i>
+                    <span data-en="Learn About Us" data-ur="ہمارے بارے میں جانئے">Learn About Us</span>
+                </a>
+            </div>
+        </div>
+
+        <!-- Decorative Bottom Gradient Curve -->
+        <div class="absolute bottom-0 left-0 right-0 h-16 bg-gradient-to-t from-slate-50 to-transparent"></div>
+    </section>
+
+    <!-- Detailed Bilingual Content Section -->
+    <section class="py-16 sm:py-24 bg-slate-50">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8 max-w-6xl">
+            
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-brand-950 mb-4" data-en="Understanding Plants & Trees: The Oxygen Line" data-ur="پودوں اور درختوں کی اہمیت: کرہ ارض کا سانس">
+                    Understanding Plants & Trees: The Oxygen Line
+                </h2>
+                <div class="w-24 h-1.5 bg-brand-500 mx-auto rounded-full mb-6"></div>
+                <p class="text-slate-600 text-lg" data-en="From tiny potted houseplants to massive rainforest canopies, plants are the ultimate pillars of our ecosystem." data-ur="چھوٹے گھریلو گملوں کے پودوں سے لے کر گھنے جنگلات تک، نباتات ہماری زمین کی بقا کا بنیادی ذریعہ ہیں۔">
+                    From tiny potted houseplants to massive rainforest canopies, plants are the ultimate pillars of our ecosystem.
+                </p>
+            </div>
+
+            <!-- English Detailed Article Block -->
+            <div class="bg-white rounded-3xl p-6 sm:p-10 shadow-xl border border-slate-100 mb-12 relative overflow-hidden">
+                <div class="absolute top-0 left-0 w-3 h-full bg-brand-500"></div>
+                <div class="flex items-center gap-3 mb-6">
+                    <span class="bg-brand-100 text-brand-800 text-xs font-bold px-3 py-1 rounded-full uppercase">English Article</span>
+                    <h3 class="text-2xl font-bold text-slate-900">Why Planting Trees & Cultivating Plants Shapes Our Future</h3>
+                </div>
+                <div class="prose max-w-none text-slate-700 space-y-4 leading-relaxed">
+                    <p class="text-base sm:text-lg">
+                        <strong>Plants and trees</strong> are far more than mere aesthetic adornments for our landscapes and houses—they are the dynamic engines of atmospheric renewal. Through the miraculous biochemical process of photosynthesis, plants absorb harmful carbon dioxide emissions, filter volatile airborne chemicals, and release clean oxygen needed by every living creature on Earth.
+                    </p>
+                    <p>
+                        Cultivating plants indoors reduces stress, sharpens cognitive focus, and regulates indoor humidity. Outdoors, mature tree canopies protect soil from severe erosion, create vital microclimates that lower urban heat island temperatures by several degrees, and serve as indispensable habitats for thousands of bird, insect, and wildlife species.
+                    </p>
+                    <p>
+                        Whether you are planting a small succulent on your window sill or leading a community afforestation drive, every seed planted is an investment in a cleaner, cooler, and healthier tomorrow.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Urdu Detailed Article Block -->
+            <div class="bg-emerald-950 text-slate-100 rounded-3xl p-6 sm:p-10 shadow-xl border border-brand-800 relative overflow-hidden font-urdu" dir="rtl">
+                <div class="absolute top-0 right-0 w-3 h-full bg-brand-400"></div>
+                <div class="flex items-center gap-3 mb-6">
+                    <span class="bg-brand-500 text-white text-xs font-bold px-3 py-1 rounded-full uppercase font-sans">اردو تحریر</span>
+                    <h3 class="text-2xl sm:text-3xl font-bold text-brand-200">درخت اور پودے: زمین کی بقا اور انسان کا روشن مستقبل</h3>
+                </div>
+                <div class="space-y-4 text-base sm:text-lg leading-loose text-slate-200">
+                    <p>
+                        درخت اور پودے محض قدرتی خوبصورتی کا ذریعہ نہیں بلکہ یہ ہماری زمین کا وہ نظام ہیں جو زندگی کو قائم رکھے ہوئے ہے۔ پودے فوٹوسنتھیسس (Photosynthesis) کے ذریعے نہ صرف ہوا کو صاف کرتے ہیں بلکہ ماحول سے زہریلی گیسوں کو جذب کر کے ہمیں تازہ اور صاف آکسیجن مہیا کرتے ہیں۔
+                    </p>
+                    <p>
+                        گھروں میں پودے لگانے سے نہ صرف ذہنی تناؤ اور تھکاوٹ میں کمی آتی ہے بلکہ گھر کی ہوا بھی پاکیزہ رہتی ہے۔ اسی طرح بڑے پیمانے پر شجرکاری (Afforestation) سے نہ صرف زلزلوں اور سیلاب کے خطرات کم ہوتے ہیں بلکہ زمین کی زرخیزی میں اضافہ ہوتا ہے اور درجہ حرارت میں نمایاں کمی آتی ہے۔
+                    </p>
+                    <p>
+                        ہماری ذمہ داری ہے کہ ہم نہ صرف نئے پودے لگائیں بلکہ موجودہ درختوں کی حفاظت بھی یقینی بنائیں۔ ایک چھوٹا سا پودا بھی آنے والی نسلوں کے لیے ایک سایہ دار اور شاداب مستقبل کی بنیاد بن سکتا ہے۔
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- SEO Best Practices Banner (Ranking #1 on Google Showcase) -->
+    <section id="seo-guide" class="py-16 bg-gradient-to-br from-brand-900 via-brand-950 to-slate-900 text-white relative">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8 max-w-6xl">
+            <div class="flex flex-col lg:flex-row items-center justify-between gap-10">
+                
+                <div class="lg:w-1/2 space-y-6">
+                    <span class="bg-brand-500/20 text-brand-300 border border-brand-500/30 text-xs font-bold px-3 py-1.5 rounded-full uppercase tracking-wider">
+                        <i class="fa-solid fa-chart-line mr-1"></i> Google Ranking Strategy
+                    </span>
+                    <h2 class="text-3xl sm:text-4xl font-extrabold leading-tight" data-en="How This Website is Optimized to Reach Google's #1 Page" data-ur="اس ویب سائٹ کو گوگل کے پہلے صفحے پر لانے کی حکمت عملی">
+                        How This Website is Optimized to Reach Google's #1 Page
+                    </h2>
+                    <p class="text-slate-300 text-sm sm:text-base leading-relaxed" data-en="To achieve top rank on Google for plant care, gardening, and environmental topics, we implement precise Search Engine Optimization (SEO) practices:" data-ur="گوگل پر نمبر 1 رینکنگ حاصل کرنے کے لیے ہم نے درجہ ذیل بہترین ایس ای او (SEO) اصولوں کو اپنایا ہے:">
+                        To achieve top rank on Google for plant care, gardening, and environmental topics, we implement precise Search Engine Optimization (SEO) practices:
+                    </p>
+
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2">
+                        <div class="flex items-start gap-3 bg-white/5 p-3 rounded-xl border border-white/10">
+                            <i class="fa-solid fa-check-circle text-brand-400 text-lg mt-1"></i>
+                            <div>
+                                <h4 class="font-bold text-sm text-white" data-en="Rich Keywords" data-ur="کلیدی الفاظ">Rich Keywords</h4>
+                                <p class="text-xs text-slate-400" data-en="Targeting high-volume botanical queries" data-ur="بہترین اور تلاش کیے جانے والے الفاظ">Targeting high-volume botanical queries</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-3 bg-white/5 p-3 rounded-xl border border-white/10">
+                            <i class="fa-solid fa-check-circle text-brand-400 text-lg mt-1"></i>
+                            <div>
+                                <h4 class="font-bold text-sm text-white" data-en="Mobile Responsive" data-ur="موبائل فرینڈلی">Mobile Responsive</h4>
+                                <p class="text-xs text-slate-400" data-en="100% fluid design across screens" data-ur="ہر موبائل اور سائز کے لیے موزوں">100% fluid design across screens</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-3 bg-white/5 p-3 rounded-xl border border-white/10">
+                            <i class="fa-solid fa-check-circle text-brand-400 text-lg mt-1"></i>
+                            <div>
+                                <h4 class="font-bold text-sm text-white" data-en="Bilingual Content" data-ur="دو زبانی مواد">Bilingual Content</h4>
+                                <p class="text-xs text-slate-400" data-en="English + Urdu multilingual SEO" data-ur="اردو اور انگریزی کی شمولیت">English + Urdu multilingual SEO</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-3 bg-white/5 p-3 rounded-xl border border-white/10">
+                            <i class="fa-solid fa-check-circle text-brand-400 text-lg mt-1"></i>
+                            <div>
+                                <h4 class="font-bold text-sm text-white" data-en="Fast Loading" data-ur="تیز ترین رفتار">Fast Loading</h4>
+                                <p class="text-xs text-slate-400" data-en="Optimized structure & scripts" data-ur="تيز رفتار پیج لوڈنگ">Optimized structure & scripts</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="lg:w-1/2 w-full">
+                    <div class="bg-slate-900/90 rounded-2xl p-6 border border-brand-500/30 shadow-2xl space-y-4">
+                        <div class="flex items-center justify-between border-b border-slate-800 pb-3">
+                            <span class="text-xs text-slate-400 font-mono"><i class="fa-brands fa-google text-red-400 mr-2"></i>Google Search Result Preview</span>
+                            <span class="text-xs bg-emerald-500/20 text-emerald-400 px-2 py-0.5 rounded font-mono">Rank #1</span>
+                        </div>
+                        <div>
+                            <span class="text-xs text-emerald-400 font-mono block truncate">https://www.plantsaretrees.com</span>
+                            <h3 class="text-lg sm:text-xl font-semibold text-blue-400 hover:underline cursor-pointer">Plants are Trees | Ultimate Botanical & Gardening Guide</h3>
+                            <p class="text-xs sm:text-sm text-slate-300 mt-1 leading-normal">
+                                Discover comprehensive plant care tips, tree planting importance, indoor garden decoration, and environmental guidelines in English and Urdu.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Plant Care Features & Tips Section -->
+    <section id="plant-care" class="py-20 bg-white">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8 max-w-6xl">
+            
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="text-brand-600 font-bold text-xs uppercase tracking-wider block mb-2" data-en="Essential Care Instructions" data-ur="پودوں کی دیکھ بھال کے اصول">Essential Care Instructions</span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 mb-4" data-en="How to Keep Your Plants Thriving" data-ur="اپنے پودوں کو ہمیشہ سرسبز اور شاداب کیسے رکھیں">
+                    How to Keep Your Plants Thriving
+                </h2>
+                <div class="w-20 h-1 bg-brand-500 mx-auto rounded-full"></div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                
+                <!-- Card 1 -->
+                <div class="bg-slate-50 rounded-3xl p-8 border border-slate-200/80 hover:shadow-xl hover:border-brand-300 transition group duration-300">
+                    <div class="w-16 h-16 rounded-2xl bg-brand-100 text-brand-700 flex items-center justify-center text-2xl mb-6 group-hover:bg-brand-600 group-hover:text-white transition">
+                        <i class="fa-solid fa-droplet"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-3" data-en="Watering Balance" data-ur="پانی کا مناسب استعمال">Watering Balance</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed mb-4" data-en="Overwatering causes root rot, while underwatering wilts leaves. Always check top 2 inches of soil before watering." data-ur="زیادہ پانی پودے کی جڑوں کو خراب کر سکتا ہے۔ پانی دینے سے پہلے مٹی کی نمی کو لازمی جانچ لیں۔">
+                        Overwatering causes root rot, while underwatering wilts leaves. Always check top 2 inches of soil before watering.
+                    </p>
+                    <span class="text-xs font-semibold text-brand-600 group-hover:underline flex items-center gap-1 cursor-pointer">
+                        <span data-en="Read More" data-ur="مزید جانئے">Read More</span> <i class="fa-solid fa-arrow-right text-xs"></i>
+                    </span>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="bg-slate-50 rounded-3xl p-8 border border-slate-200/80 hover:shadow-xl hover:border-brand-300 transition group duration-300">
+                    <div class="w-16 h-16 rounded-2xl bg-amber-100 text-amber-700 flex items-center justify-center text-2xl mb-6 group-hover:bg-amber-600 group-hover:text-white transition">
+                        <i class="fa-solid fa-sun"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-3" data-en="Sunlight Needs" data-ur="سورج کی روشنی">Sunlight Needs</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed mb-4" data-en="Different species require varied sunlight levels. Match bright indirect light for tropicals and direct sun for succulents." data-ur="مختلف پودوں کو مختلف مقدار میں دھوپ کی ضرورت ہوتی ہے۔ ان کی قدرتی ضروریات کے مطابق جگہ کا انتخاب کریں۔">
+                        Different species require varied sunlight levels. Match bright indirect light for tropicals and direct sun for succulents.
+                    </p>
+                    <span class="text-xs font-semibold text-brand-600 group-hover:underline flex items-center gap-1 cursor-pointer">
+                        <span data-en="Read More" data-ur="مزید جانئے">Read More</span> <i class="fa-solid fa-arrow-right text-xs"></i>
+                    </span>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="bg-slate-50 rounded-3xl p-8 border border-slate-200/80 hover:shadow-xl hover:border-brand-300 transition group duration-300">
+                    <div class="w-16 h-16 rounded-2xl bg-emerald-100 text-emerald-700 flex items-center justify-center text-2xl mb-6 group-hover:bg-emerald-600 group-hover:text-white transition">
+                        <i class="fa-solid fa-flask"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-3" data-en="Nutrients & Soil" data-ur="مٹی اور کھاد">Nutrients & Soil</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed mb-4" data-en="Use organic compost and well-draining potting soil mixtures to fuel vibrant leaf expansion and healthy roots." data-ur="پودوں کو طاقتور بنانے کے لیے نامیاتی کھاد اور بہترین نکاس والی مٹی کا استعمال کریں۔">
+                        Use organic compost and well-draining potting soil mixtures to fuel vibrant leaf expansion and healthy roots.
+                    </p>
+                    <span class="text-xs font-semibold text-brand-600 group-hover:underline flex items-center gap-1 cursor-pointer">
+                        <span data-en="Read More" data-ur="مزید جانئے">Read More</span> <i class="fa-solid fa-arrow-right text-xs"></i>
+                    </span>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Photo Gallery Section -->
+    <section id="gallery" class="py-20 bg-slate-100">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8 max-w-6xl">
+            
+            <div class="flex flex-col sm:flex-row sm:items-end justify-between mb-12">
+                <div>
+                    <span class="text-brand-600 font-bold text-xs uppercase tracking-wider block mb-2" data-en="Visual Inspiration" data-ur="تصویری خوبصورتی">Visual Inspiration</span>
+                    <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900" data-en="Botanical Gallery" data-ur="پودوں اور مناظر کی گیلری">
+                        Botanical Gallery
+                    </h2>
+                </div>
+                <p class="text-slate-500 text-sm max-w-md mt-2 sm:mt-0" data-en="Explore high-definition photos showcasing lush gardens, houseplants, and grand forests." data-ur="خوبصورت گھریلو پودوں، پھولوں اور شاداب جنگلات کی تصاویر۔">
+                    Explore high-definition photos showcasing lush gardens, houseplants, and grand forests.
+                </p>
+            </div>
+
+            <!-- Image Grid -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+                
+                <!-- Image 1 -->
+                <div class="group relative h-72 rounded-3xl overflow-hidden shadow-lg border border-white">
+                    <img src="https://images.unsplash.com/photo-1463936575829-25148e1db1b8?q=80&w=800&auto=format&fit=crop" alt="Indoor Houseplants" class="w-full h-full object-cover group-hover:scale-110 transition duration-500" onerror="this.src='https://placehold.co/800x600/166534/ffffff?text=Lush+Plants'">
+                    <div class="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition duration-300 flex flex-col justify-end p-6 text-white">
+                        <h4 class="font-bold text-lg" data-en="Indoor Succulents" data-ur="گھریلو سندر پودے">Indoor Succulents</h4>
+                        <p class="text-xs text-slate-300" data-en="Perfect for homes & offices" data-ur="گھر اور دفتر کے لیے بہترین">Perfect for homes & offices</p>
+                    </div>
+                </div>
+
+                <!-- Image 2 -->
+                <div class="group relative h-72 rounded-3xl overflow-hidden shadow-lg border border-white">
+                    <img src="https://images.unsplash.com/photo-1448375240586-882707db888b?q=80&w=800&auto=format&fit=crop" alt="Majestic Pine Forest" class="w-full h-full object-cover group-hover:scale-110 transition duration-500" onerror="this.src='https://placehold.co/800x600/14532d/ffffff?text=Pine+Forest'">
+                    <div class="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition duration-300 flex flex-col justify-end p-6 text-white">
+                        <h4 class="font-bold text-lg" data-en="Pine Canopy Forest" data-ur="سنو بر اور صنوبر کے جنگلات">Pine Canopy Forest</h4>
+                        <p class="text-xs text-slate-300" data-en="Natural carbon sinks" data-ur="قدرتی ماحول کے محافظ">Natural carbon sinks</p>
+                    </div>
+                </div>
+
+                <!-- Image 3 -->
+                <div class="group relative h-72 rounded-3xl overflow-hidden shadow-lg border border-white">
+                    <img src="https://images.unsplash.com/photo-1530968464165-7a18617716d8?q=80&w=800&auto=format&fit=crop" alt="Tropical Monstera Leaf" class="w-full h-full object-cover group-hover:scale-110 transition duration-500" onerror="this.src='https://placehold.co/800x600/15803d/ffffff?text=Monstera+Deliciosa'">
+                    <div class="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition duration-300 flex flex-col justify-end p-6 text-white">
+                        <h4 class="font-bold text-lg" data-en="Tropical Monstera" data-ur="ٹراپیکل مانسٹیرا">Tropical Monstera</h4>
+                        <p class="text-xs text-slate-300" data-en="Popular ornamental plant" data-ur="مشہور آرائشی پودا">Popular ornamental plant</p>
+                    </div>
+                </div>
+
+                <!-- Image 4 -->
+                <div class="group relative h-72 rounded-3xl overflow-hidden shadow-lg border border-white">
+                    <img src="https://images.unsplash.com/photo-1585320806297-9794b3e4eeae?q=80&w=800&auto=format&fit=crop" alt="Gardening Tools & Plants" class="w-full h-full object-cover group-hover:scale-110 transition duration-500" onerror="this.src='https://placehold.co/800x600/16a34a/ffffff?text=Gardening+Care'">
+                    <div class="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition duration-300 flex flex-col justify-end p-6 text-white">
+                        <h4 class="font-bold text-lg" data-en="Repotting & Care" data-ur="پودے لگانے کی تیاری">Repotting & Care</h4>
+                        <p class="text-xs text-slate-300" data-en="Essential garden equipment" data-ur="باغبانی کے بنیادی اوزار">Essential garden equipment</p>
+                    </div>
+                </div>
+
+                <!-- Image 5 -->
+                <div class="group relative h-72 rounded-3xl overflow-hidden shadow-lg border border-white">
+                    <img src="https://images.unsplash.com/photo-1501004318641-b39e6451bec6?q=80&w=800&auto=format&fit=crop" alt="Sprouting Seedling" class="w-full h-full object-cover group-hover:scale-110 transition duration-500" onerror="this.src='https://placehold.co/800x600/22c55e/ffffff?text=Seedling+Life'">
+                    <div class="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition duration-300 flex flex-col justify-end p-6 text-white">
+                        <h4 class="font-bold text-lg" data-en="New Life Growth" data-ur="نیا اگتا پودا">New Life Growth</h4>
+                        <p class="text-xs text-slate-300" data-en="Seeds sprouting in rich soil" data-ur="مٹی سے نکلتی نئی زندگی">Seeds sprouting in rich soil</p>
+                    </div>
+                </div>
+
+                <!-- Image 6 -->
+                <div class="group relative h-72 rounded-3xl overflow-hidden shadow-lg border border-white">
+                    <img src="https://images.unsplash.com/photo-1470058869958-2a77ade41c02?q=80&w=800&auto=format&fit=crop" alt="Green Rainforest Canopy" class="w-full h-full object-cover group-hover:scale-110 transition duration-500" onerror="this.src='https://placehold.co/800x600/052e16/ffffff?text=Rainforest'">
+                    <div class="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition duration-300 flex flex-col justify-end p-6 text-white">
+                        <h4 class="font-bold text-lg" data-en="Amazon Rainforest Canopy" data-ur="امیزون کے سرسبز جنگلات">Amazon Rainforest Canopy</h4>
+                        <p class="text-xs text-slate-300" data-en="Earth's biological treasure" data-ur="کرہ ارض کا سرسبز خزانہ">Earth's biological treasure</p>
+                    </div>
+                </div>
+                <div class="gallery-card">
+                    <img src="https://images.unsplash.com/photo-1518531933037-91b2f5f229cc?w=600" alt="Lush Green Fern">
+                    <div class="gallery-card-content">1. Vibrant Green Fern</div>
+                </div>
+                <div class="gallery-card">
+                    <img src="https://images.unsplash.com/photo-1542273917363-3b1817f69a2d?w=600" alt="Dense Pine Forest">
+                    <div class="gallery-card-content">2. Pine Forest Canopy</div>
+                </div>
+                <div class="gallery-card">
+                    <img src="https://images.unsplash.com/photo-1501004318641-b39e6451bec6?w=600" alt="Blooming Orchids">
+                    <div class="gallery-card-content">3. Exotic Flora & Orchids</div>
+                </div>
+                <div class="gallery-card">
+                    <img src="https://images.unsplash.com/photo-1448375240586-882707db888b?w=600" alt="Sunlight Through Trees">
+                    <div class="gallery-card-content">4. Sunlight in Woods</div>
+                </div>
+                <div class="gallery-card">
+                    <img src="https://images.unsplash.com/photo-1533450718592-29d45635f0a9?w=600" alt="Mushroom in Forest">
+                    <div class="gallery-card-content">6. Forest Fungi & Life</div>
+                </div>
+                <div class="gallery-card">
+                    <img src="https://images.unsplash.com/photo-1469474968028-56623f02e42e?w=600" alt="Valley and Green Hills">
+                    <div class="gallery-card-content">7. Mountain Green Valley</div>
+                </div>
+                <div class="gallery-card">
+                    <img src="https://images.unsplash.com/photo-1500382017468-9049fed747ef?w=600" alt="Green Grass Field">
+                    <div class="gallery-card-content">8. Grasslands & Meadows</div>
+                </div>
+                <div class="gallery-card">
+                    <img src="https://images.unsplash.com/photo-1473448912268-2022ce9509d8?w=600" alt="Tall Redwood Tree">
+                    <div class="gallery-card-content">9. Ancient Giant Tree</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Video Showcase Section -->
+    <section id="videos" class="py-20 bg-white">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8 max-w-6xl">
+            
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="text-brand-600 font-bold text-xs uppercase tracking-wider block mb-2" data-en="Multimedia Learning" data-ur="ویڈیو رہنما">Multimedia Learning</span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 mb-4" data-en="Watch & Learn: Plant Care Guides" data-ur="ویڈیوز دیکھئے اور باغبانی سیکھئے">
+                    Watch & Learn: Plant Care Guides
+                </h2>
+                <div class="w-20 h-1 bg-brand-500 mx-auto rounded-full"></div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                
+                <!-- Video Card 1 -->
+                <div class="bg-slate-50 rounded-3xl p-5 border border-slate-200 overflow-hidden shadow-md">
+                    <div class="aspect-video w-full rounded-2xl overflow-hidden bg-black mb-4 relative">
+                        <iframe class="w-full h-full" src="https://www.youtube.com/embed/9o34z4X6S9k" title="Plant Care Video Guide" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <h3 class="font-bold text-lg text-slate-900" data-en="Indoor Plant Care Essentials for Beginners" data-ur="شروعاتی افراد کے لیے گھریلو پودوں کی دیکھ بھال">Indoor Plant Care Essentials for Beginners</h3>
+                    <p class="text-xs text-slate-500 mt-2" data-en="Learn watering techniques, lighting requirements, and pot sizing." data-ur="پودوں کو صحیح مقدار میں پانی اور دھوپ دینے کے راز جانئے۔">Learn watering techniques, lighting requirements, and pot sizing.</p>
+                </div>
+
+                <!-- Video Card 2 -->
+                <div class="bg-slate-50 rounded-3xl p-5 border border-slate-200 overflow-hidden shadow-md">
+                    <div class="aspect-video w-full rounded-2xl overflow-hidden bg-black mb-4 relative">
+                        <iframe class="w-full h-full" src="https://www.youtube.com/embed/a72YmOp-8xU" title="Tree Plantation Guide" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <h3 class="font-bold text-lg text-slate-900" data-en="Why Planting Trees Saves Our Planet" data-ur="درخت لگانا ماحول کے لیے کیوں ضروری ہے؟">Why Planting Trees Saves Our Planet</h3>
+                    <p class="text-xs text-slate-500 mt-2" data-en="Explore how afforestation combats global warming and enriches wildlife." data-ur="شجرکاری کے ذریعے ماحول اور زمین کی حفاظت کس طرح ممکن ہے۔">Explore how afforestation combats global warming and enriches wildlife.</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us & Owner Details Section -->
+    <section id="about" class="py-20 bg-brand-950 text-white relative overflow-hidden">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8 max-w-6xl relative z-10">
+            
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                
+                <div class="space-y-6">
+                    <span class="bg-brand-500/20 text-brand-300 border border-brand-500/30 text-xs font-bold px-3 py-1.5 rounded-full uppercase tracking-wider" data-en="About Plants are Trees" data-ur="ہمارے بارے میں">
+                        About Plants are Trees
+                    </span>
+                    <h2 class="text-3xl sm:text-5xl font-extrabold leading-tight" data-en="Driven by Passion for a Greener Tomorrow" data-ur="ایک سرسبز اور شاداب مستقبل کے لیے کوشاں">
+                        Driven by Passion for a Greener Tomorrow
+                    </h2>
+                    <p class="text-slate-300 leading-relaxed text-base sm:text-lg" data-en="'Plants are Trees' is an initiative devoted to spreading practical knowledge on botany, urban forestation, houseplant upkeep, and ecological conservation. Founded to make plant education accessible in both English and Urdu across the globe." data-ur="'پودے درخت ہیں' ایک ایسا پلیٹ فارم ہے جس کا مقصد نباتیات، شجرکاری، گھریلو باغبانی اور قدرتی ماحول کے تحفظ کے بارے میں بیداری پیدا کرنا ہے۔ یہ پلیٹ فارم اردو اور انگریزی دونوں زبانوں میں معلومات فراہم کرتا ہے۔">
+                        'Plants are Trees' is an initiative devoted to spreading practical knowledge on botany, urban forestation, houseplant upkeep, and ecological conservation. Founded to make plant education accessible in both English and Urdu across the globe.
+                    </p>
+
+                    <!-- Contact Details Card -->
+                    <div class="bg-white/10 backdrop-blur-md rounded-2xl p-6 border border-white/10 space-y-4">
+                        <h4 class="font-bold text-lg text-brand-300 border-b border-white/10 pb-2" data-en="Direct Contact Information" data-ur="برائے راست رابطہ">Direct Contact Information</h4>
+                        
+                        <div class="flex items-center gap-4">
+                            <div class="w-10 h-10 rounded-xl bg-brand-500/20 text-brand-400 flex items-center justify-center text-lg">
+                                <i class="fa-solid fa-phone"></i>
+                            </div>
+                            <div>
+                                <span class="text-xs text-slate-400 block" data-en="Phone Number / Whatsapp" data-ur="فون نمبر / واٹس ایپ">Phone Number / Whatsapp</span>
+                                <a href="tel:+923066638575" class="text-base font-bold text-white hover:text-brand-300 transition">+92 306 6638575</a>
+                            </div>
+                        </div>
+
+                        <div class="flex items-center gap-4">
+                            <div class="w-10 h-10 rounded-xl bg-brand-500/20 text-brand-400 flex items-center justify-center text-lg">
+                                <i class="fa-solid fa-envelope"></i>
+                            </div>
+                            <div>
+                                <span class="text-xs text-slate-400 block" data-en="Official Email" data-ur="آفیشل ای میل">Official Email</span>
+                                <a href="mailto:khayyamdogar02@gmail.com" class="text-base font-bold text-white hover:text-brand-300 transition">khayyamdogar02@gmail.com</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="relative">
+                    <div class="rounded-3xl overflow-hidden shadow-2xl border-4 border-white/10">
+                        <img src="https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?q=80&w=1000&auto=format&fit=crop" alt="Green Forest Nature Care" class="w-full h-auto object-cover" onerror="this.src='https://placehold.co/800x800/166534/ffffff?text=Nature+Care'">
+                    </div>
+                    <div class="absolute -bottom-6 -left-6 bg-brand-500 text-white p-6 rounded-2xl shadow-xl hidden sm:block">
+                        <span class="block text-3xl font-extrabold">100%</span>
+                        <span class="text-xs font-medium uppercase tracking-wider" data-en="Eco Dedicated" data-ur="ماحول دوست عزم">Eco Dedicated</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section id="contact" class="py-20 bg-slate-50">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8 max-w-4xl">
+            
+            <div class="bg-white rounded-3xl shadow-xl p-8 sm:p-12 border border-slate-200">
+                <div class="text-center max-w-2xl mx-auto mb-10">
+                    <h2 class="text-3xl font-extrabold text-slate-900 mb-2" data-en="Send Us a Message" data-ur="ہمیں اپنا پیغام بھیجیں">Send Us a Message</h2>
+                    <p class="text-slate-500 text-sm" data-en="Have questions about plant care, tree donation, or website partnerships? Reach out!" data-ur="پودوں کی دیکھ بھال یا باغبانی سے متعلق کسی بھی سوال کے لیے رابطہ کریں۔">Have questions about plant care, tree donation, or website partnerships? Reach out!</p>
+                </div>
+
+                <form onsubmit="handleContactSubmit(event)" class="space-y-6">
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                        <div>
+                            <label class="block text-xs font-bold uppercase text-slate-700 mb-2" data-en="Your Name" data-ur="آپ کا نام">Your Name</label>
+                            <input type="text" required placeholder="Khayyam Dogar" class="w-full px-4 py-3.5 rounded-xl border border-slate-300 focus:outline-none focus:ring-2 focus:ring-brand-500 transition">
+                        </div>
+                        <div>
+                            <label class="block text-xs font-bold uppercase text-slate-700 mb-2" data-en="Your Email" data-ur="آپ کا ای میل">Your Email</label>
+                            <input type="email" required placeholder="khayyamdogar02@gmail.com" class="w-full px-4 py-3.5 rounded-xl border border-slate-300 focus:outline-none focus:ring-2 focus:ring-brand-500 transition">
+                        </div>
+                    </div>
+
+                    <div>
+                        <label class="block text-xs font-bold uppercase text-slate-700 mb-2" data-en="Subject" data-ur="موضوع">Subject</label>
+                        <input type="text" required placeholder="Plant Care Inquiry" class="w-full px-4 py-3.5 rounded-xl border border-slate-300 focus:outline-none focus:ring-2 focus:ring-brand-500 transition">
+                    </div>
+
+                    <div>
+                        <label class="block text-xs font-bold uppercase text-slate-700 mb-2" data-en="Message" data-ur="پیغام">Message</label>
+                        <textarea rows="5" required placeholder="Write your message or plant query here..." class="w-full px-4 py-3.5 rounded-xl border border-slate-300 focus:outline-none focus:ring-2 focus:ring-brand-500 transition"></textarea>
+                    </div>
+
+                    <button type="submit" class="w-full py-4 bg-brand-600 hover:bg-brand-700 text-white font-bold rounded-xl shadow-lg shadow-brand-600/30 transition">
+                        <span data-en="Send Message" data-ur="پیغام ارسال کریں">Send Message</span>
+                    </button>
+                </form>
+
+                <div id="contactToast" class="hidden mt-6 p-4 bg-emerald-100 border border-emerald-300 text-emerald-800 rounded-xl text-center font-medium text-sm">
+                    <i class="fa-solid fa-circle-check text-emerald-600 mr-2"></i>
+                    <span data-en="Thank you! Your message has been submitted successfully." data-ur="شکریہ! آپ کا پیغام موصول ہو گیا ہے۔">Thank you! Your message has been submitted successfully.</span>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-slate-950 text-slate-400 py-12 border-t border-slate-800">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8 max-w-6xl">
+            <div class="flex flex-col md:flex-row items-center justify-between gap-6">
+                
+                <div class="flex items-center space-x-3">
+                    <div class="w-10 h-10 rounded-xl bg-brand-600 flex items-center justify-center text-white font-bold">
+                        <i class="fa-solid fa-tree"></i>
+                    </div>
+                    <span class="text-xl font-bold text-white tracking-tight">Plants are Trees</span>
+                </div>
+
+                <p class="text-xs text-center md:text-left text-slate-500">
+                    &copy; 2026 Plants are Trees. All rights reserved. Created with passion for a greener world.
+                </p>
+
+                <div class="flex space-x-4 text-slate-400 text-lg">
+                    <a href="tel:+923066638575" class="hover:text-brand-400 transition" title="Phone"><i class="fa-solid fa-phone"></i></a>
+                    <a href="mailto:khayyamdogar02@gmail.com" class="hover:text-brand-400 transition" title="Email"><i class="fa-solid fa-envelope"></i></a>
+                    <a href="https://whatsapp.com" target="_blank" class="hover:text-brand-400 transition" title="Whatsapp"><i class="fa-brands fa-whatsapp"></i></a>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+
+    <!-- Interactive JavaScript for Language Toggle & Menu -->
+    <script>
+        let currentLang = 'en';
+
+        function toggleLanguage() {
+            currentLang = currentLang === 'en' ? 'ur' : 'en';
+            
+            // Toggle Direction for Urdu RTL support
+            if (currentLang === 'ur') {
+                document.documentElement.setAttribute('dir', 'rtl');
+                document.body.classList.add('font-urdu');
+                document.getElementById('langLabel').innerText = 'Switch to English';
+            } else {
+                document.documentElement.removeAttribute('dir');
+                document.body.classList.remove('font-urdu');
+                document.getElementById('langLabel').innerText = 'اردو میں دیکھئے';
+            }
+
+            // Update text for all elements with data-en & data-ur attributes
+            const elements = document.querySelectorAll('[data-en][data-ur]');
+            elements.forEach(el => {
+                el.textContent = el.getAttribute(`data-${currentLang}`);
+            });
+        }
+
+        function toggleMobileMenu() {
+            const menu = document.getElementById('mobileMenu');
+            menu.classList.toggle('hidden');
+        }
+
+        function handleContactSubmit(event) {
+            event.preventDefault();
+            const toast = document.getElementById('contactToast');
+            toast.classList.remove('hidden');
+            event.target.reset();
+            setTimeout(() => {
+                toast.classList.add('hidden');
+            }, 5000);
+        }
+    </script>
+</body>
+</html>
